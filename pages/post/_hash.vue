@@ -63,6 +63,12 @@
         .catch(err => { console.error(err) })
     },
 
+    head () {
+      return {
+        title: this.title
+      }
+    },
+
     watch: {
       'htmlFromMarkdown': 'newTab'
     }
