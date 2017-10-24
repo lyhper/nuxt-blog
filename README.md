@@ -1,12 +1,12 @@
 # nuxt-blog
 
-> blog with ssr
+> this is a blog project, which is based on server side render.
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install
+$ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
@@ -19,4 +19,35 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## Usage
+
++ modify the config.json in the root directory
+  - blogTitle: web page title
+  - blogDescription: web page description
+  - blogKeyword: web page keyword
+  - repo: your github repository with markdown in it
+  - path: the path of your markdown
+  - branch: your github repository branch
+
++ add your favicon to the /static
+
++ deploy
+
+  - server side render: 
+
+  ```bash
+  npm run build
+
+  npm start
+  ```
+
+  - static page:
+
+  ```bash
+  npm run generate
+  ```
+  all the static resources are in the /dist
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
