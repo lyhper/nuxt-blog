@@ -1,16 +1,18 @@
+const config = require('./config.json')
+
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: 'lyhper blog',
+    title: config.blogTitle,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' },
       { name: 'renderer', content: 'webkit' },
       { name: 'theme-color', content: '#fff' },
-      { hid: 'description', name: 'description', content: 'lyhper blog' },
-      { name: 'keyword', content: 'lyhper,vue,nuxt,ssr,服务端渲染,博客' }
+      { hid: 'description', name: 'description', content: config.blogDescription },
+      { name: 'keyword', content: config.blogKeyword }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
